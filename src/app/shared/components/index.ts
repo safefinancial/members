@@ -1,6 +1,8 @@
 import { Auth0FeatureComponent } from "./auth0-feature.component";
 import { Auth0FeaturesComponent } from "./auth0-features.component";
 import { CodeSnippetComponent } from "./code-snippet.component";
+import { FooterComponent } from "./footer/footer.component";
+import { HeaderComponent } from "./header/header.component";
 import { HeroBannerComponent } from "./hero-banner.component";
 import { NAVIGATION_COMPONENTS } from "./navigation";
 import { PageFooterHyperlinkComponent } from "./page-footer-hyperlink.component";
@@ -10,6 +12,8 @@ import { PageLoaderComponent } from "./page-loader.component";
 
 export const COMPONENTS = [
     ...NAVIGATION_COMPONENTS,
+    HeaderComponent,
+    FooterComponent,
     Auth0FeatureComponent,
     Auth0FeaturesComponent,
     CodeSnippetComponent,

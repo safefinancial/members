@@ -5,7 +5,13 @@ import { DOCUMENT } from '@angular/common';
 @Component({
   selector: 'app-logout-button',
   template: `
-    <button class="button__logout" (click)="handleLogout()">Log Out</button>
+    <a href="#"  (click)="handleLogout()">
+      Logout
+      <img
+        class="ml-4 inline-block pb-1"
+        src="/assets/img/svg/Logout icon.svg"
+      />
+    </a>
   `,
 })
 export class LogoutButtonComponent {

@@ -1,0 +1,9 @@
+mixin ml-page-head(title)
+	div.relative(class="lg:mb-20 lg:h-80 lg:mb-12")
+
+		div.hidden.absolute.inset-0(class="lg:block")
+			img.object-cover.h-full.w-full(src="/img/online-application.jpeg")
+
+		div.container.grid.place-items-center.relative.z-10.h-full.remove-mb
+			div.text-red.text-center(class="lg:text-white")
+				h1.text-4xl.my-6(class="lg:mb-6 lg:mt-0")= title

@@ -1,0 +1,15 @@
+mixin faq(containerId, faqs)
+	div.safe-accordion.accordion.mb-24(id= containerId + "accordion")
+		- var questions = faqs
+		each val, index in questions
+			- var showClass = ""
+			- var collapseClass = "collapsed"
+			if index == 0
+				- var showClass = "show"
+				- var collapseClass = ""
+			div.accordion-item
+				h2.accordion-header(id= containerId + "Question" + index)
+					button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#' + containerId + 'Collapse' + index aria-expanded='true' aria-controls= containerId + 'Collapse' + index class=collapseClass)= val
+			div.accordion-collapse.collapse(id= containerId + "Collapse" + index aria-labelledby= containerId + 'Question' + index data-bs-parent='#' + containerId + "accordion" class=[showClass])
+				div.accordion-body
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore eveniet, provident accusamus consequatur, voluptate veniam quod minus inventore asperiores corrupti tempora consectetur ratione. Error natus iste quam hic, tenetur totam.

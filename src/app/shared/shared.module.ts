@@ -7,6 +7,8 @@ import { Auth0FeaturesComponent } from './components/auth0-features.component';
 import { LoginButtonComponent } from './components/buttons/login-button.component';
 import { LogoutButtonComponent } from './components/buttons/logout-button.component';
 import { SignupButtonComponent } from './components/buttons/signup-button.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,18 @@ import { SignupButtonComponent } from './components/buttons/signup-button.compon
     LoginButtonComponent,
     LogoutButtonComponent,
     SignupButtonComponent,
+    HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     CommonModule,
     RouterModule
   ],
   exports: [
-    ...COMPONENTS
+    ...COMPONENTS,
+    LoginButtonComponent,
+    LogoutButtonComponent,
+    SignupButtonComponent,
   ],
 })
 export class SharedModule {}

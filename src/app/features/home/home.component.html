@@ -1,4 +1,123 @@
 <app-page-layout>
-  <app-hero-banner></app-hero-banner>
-  <app-auth0-features></app-auth0-features>
+  <div class="relative mb-12 lg:mb-20 lg:h-128">
+    <div
+      class="remove-mb container relative z-10 grid h-full place-items-center"
+    >
+      <div class="py-12 text-center lg:py-0">
+        <h1 class="mb-2 text-4xl text-red lg:mb-6 lg:text-6xl lg:text-white">
+          Members Lounge
+        </h1>
+        <h2 class="text-3xl lg:text-5xl lg:text-white">Stay Informed 24/7</h2>
+      </div>
+    </div>
+    <div class="px-4 lg:absolute lg:inset-0 lg:px-0">
+      <img
+        class="h-full w-full rounded-xl object-cover shadow lg:rounded-none lg:shadow-none"
+        src="/assets/img/online-application.jpeg"
+      />
+    </div>
+  </div>
+  <div class="container grid max-w-4xl grid-cols-3 gap-8">
+    <div>
+      <div
+        class="std-block std-block-red mb-4 p-4 lg:flex lg:items-center lg:justify-center"
+        (click)="my_details()"
+      >
+        <img
+          class="mx-auto h-20 lg:mr-4 lg:ml-0 lg:h-10 lg:w-10"
+          src="/assets/img/svg/My Details.svg"
+        />
+        <p class="hidden text-red lg:block">My Account</p>
+      </div>
+      <p class="text-center text-red lg:hidden">My Account</p>
+    </div>
+    <div>
+      <app-signup-button></app-signup-button>
+    </div>
+    <div>
+      <div
+        class="std-block std-block-red mb-4 p-4 lg:flex lg:items-center lg:justify-center"
+      >
+        <img
+          class="mx-auto h-20 lg:mr-4 lg:ml-0 lg:h-10 lg:w-10"
+          src="/assets/img/svg/Password.svg"
+        />
+        <p class="hidden text-red lg:block">My Password</p>
+      </div>
+      <p class="text-center text-red lg:hidden">My Password</p>
+    </div>
+  </div>
+  <!-- <div class="container">
+    <div class="text-center">
+      <button
+        class="btn-large btn mx-auto"
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#memberLogin"
+      >
+        Launch Example Modal
+      </button>
+    </div>
+    <div
+      class="safe-modal modal"
+      id="memberLogin"
+      tabindex="-1"
+      aria-labelledby="memberLoginTitle"
+      aria-modal="true"
+      role="dialog"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="text-center"></h5>
+            <button
+              class="btn-close"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-center text-3xl font-bold text-red">
+              Member's Login
+            </p>
+            <div class="safe-form my-12 mx-auto grid gap-12 lg:grid-cols-2">
+              <div>
+                <span class="text-xs">Email Address</span>
+                <label>
+                  <span class="sr-only">Email Address</span>
+                  <input
+                    class="input-underline"
+                    type="email"
+                    placeholder="Email"
+                    name="email"
+                    disabled
+                  />
+                </label>
+              </div>
+              <div>
+                <span class="text-xs">Password</span>
+                <label>
+                  <span class="sr-only">Password</span>
+                  <input
+                    class="input-underline"
+                    type="password"
+                    placeholder="Password"
+                    name="password"
+                    disabled
+                  />
+                </label>
+              </div>
+            </div>
+            <div class="text-center">
+              <p class="mb-6">
+                <a class="text-xs underline" href="#">Forgot Password</a>
+              </p>
+              <a class="btn-wide btn" href="#">Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
 </app-page-layout>

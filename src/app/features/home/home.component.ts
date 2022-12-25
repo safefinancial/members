@@ -4,4 +4,12 @@ import { Component } from '@angular/core';
   selector: 'app-home',
   templateUrl: './home.component.html',
 })
-export class HomeComponent {}
+export class HomeComponent {
+  public HomeComponent() {
+
+  }
+  
+  public my_details(): void {
+
+  }
+}

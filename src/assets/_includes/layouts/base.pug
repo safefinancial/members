@@ -1,0 +1,16 @@
+doctype html
+html
+	head
+		meta(name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0")
+		link(rel='stylesheet', href='/app.css')
+
+
+	body.text-darkgrey
+		block header
+			include ../partials/main-head
+		block content
+		block footer
+			include ../partials/need-help
+			include ../partials/footer
+
+		script(src="/tw-elements.js")

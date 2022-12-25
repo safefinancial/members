@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Auth0ResourceModel } from '@app/core';
 
 @Component({
-  selector: 'app-footer',
+  selector: 'app-page-footer',
   template: `
     <footer class="page-footer">
       <div class="page-footer-grid">

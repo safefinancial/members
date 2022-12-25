@@ -1,0 +1,62 @@
+footer.bg-darkgrey
+
+	div.container.grid.grid-cols-1.gap-12.text-white.block-colour-pad.remove-mb(class="lg:grid-cols-6 lg:grid-rows-2 lg:gap-8")
+
+		div.grid.grid-cols-2.gap-8.place-items-center(class="order-last lg:order-first lg:row-span-2 lg:grid-cols-none lg:place-items-start lg:place-content-start")
+			img(class="w-36 mb-8" src="/img/svg/sf-logo white.svg")
+			p.text-sm Australian Credit Licence Number 391958 ACN 098 751 930
+
+		div.text-center(class="lg:col-span-2 lg:row-span-2 lg:text-left")
+			h3.uppercase.mb-4.text-lg Safe Financial Loans
+
+			ul.columns-2
+				- var loans = ["Cash Loans", "Fast Loans", "Online Loans", "Personal Loans", "Small Loans", "$1,000-$2,000 Loans", "$2,000-$5,000 Loans", "Bad Credit Loans"]
+
+				each item in loans
+					li.py-1
+						a(class="hover:text-linegrey" href="#")
+							p.uppercase=item
+
+			div.flex.items-center.mt-8.justify-center(class="lg:justify-start")
+
+				<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 h-5 mr-4" viewBox="0 0 512 512"><path d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
+
+				p.pt-1.font-bold.text-sm Warning about borrowing
+
+		div.text-center.columns-2.-order-1(class="lg:row-span-2 lg:text-left lg:columns-1 lg:order-none")
+			ul
+				- var links = ['About', 'Blog', 'Reviews', 'Contact', 'Legals']
+				each item in links
+					li.py-2
+						a(class="hover:text-linegrey" href="#")
+							p.font-bold.text-lg.uppercase=item
+
+		div.hidden(class="lg:block lg:row-span-2")
+			h3.uppercase.mb-4.text-lg Need help?
+
+			div.rounded-xl.bg-white.flex.items-center.justify-center.p-3.mb-2
+				img(class="w-10 mr-4" src="/img/svg/Tech support.svg")
+				p.text-red.uppercase.font-bold.leading-tight Technical Support
+
+			div.rounded-xl.bg-white.flex.items-center.justify-center.p-3.mb-2
+				img(class="w-10 mr-4" src="/img/svg/Members lounge.svg")
+				p.text-red.uppercase.font-bold.leading-tight Members lounge
+
+		div.order-first(class="lg:order-none")
+			div.h-full.bg-midgrey.grid.place-items-center.p-8.mb-4(class="lg:mb-8")
+				p Trustpilot widget
+
+		div.text-center(class="lg:text-left")
+			h3.uppercase.mb-4.text-lg Contact us
+			p.text-sm.mb-4(class="lg:mb-8") 1300 661 991
+
+			h3.uppercase.mb-4.text-lg Connect with us
+			div.flex.-mx-2.justify-center(class="lg:justify-start")
+				a.mx-2(href="#")
+					img.w-6.h-6(src="/img/svg/Icon metro-facebook.svg")
+				a.mx-2(href="#")
+					img.w-6.h-6(src="/img/svg/Icon simple-instagram.svg")
+				a.mx-2(href="#")
+					img.w-6.h-6(src="/img/svg/Icon awesome-youtube.svg")
+				a.mx-2(href="#")
+					img.w-6.h-6(src="/img/svg/Icon awesome-linkedin.svg")

@@ -1,0 +1,62 @@
+header.container.flex.justify-between.items-center.py-2.remove-mb
+
+	div
+		a(href="/"): img(class="w-20" alt="Safe Financial" src="/img/svg/sf-logo.svg")
+
+	div.flex.items-center
+
+		a(class="btn hidden lg:inline-block mx-3" href='#') Members Login
+
+		a(class="btn mx-3" href='#') Apply now
+
+		button(type="button" class="inline-block ml-6 transition duration-150 ease-in-out w-6 h-7 hover:text-red" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight") <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512"><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+		div(class="offcanvas offcanvas-end fixed bottom-0 bg-boxgrey flex flex-col max-w-full invisible bg-clip-padding shadow-sm outline-none transition duration-300 ease-in-out top-0 right-0 border-none w-full lg:w-[36rem]" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel")
+
+			div.offcanvas-header.px-6.py-2
+
+				div.flex.items-center.justify-between
+
+					a(href="/"): img(class="w-20" alt="Safe Financial" src="/img/svg/sf-logo.svg")
+
+					a(class="btn lg:hidden inline-block mx-3" href='#') Members Login
+
+					button(type="button" class="btn-close box-content w-5 h-7 hover:text-red focus:shadow-none focus:outline-none" data-bs-dismiss="offcanvas" aria-label="Close") <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 320 512"><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+				div.h-px.bg-linegrey.mt-4
+
+			div.offcanvas-body.flex-grow.px-6.py-4.overflow-y-auto
+
+				p.uppercase.text-center.font-bold.mb-4 Quick loans
+
+				div.flex.flex-wrap.-mx-1.mb-4
+					each item in ["Cash", "Car", "Business", "Home"]
+						div.p-1.w-full(class='sm:w-1/4')
+							p.std-block.pb-2.px-2.font-bold.text-red.uppercase(class="pt-2.5")=item
+
+				ul.grey-list
+					li: a(href="#") About
+					li#loansParent.text-red.collapsed(data-bs-toggle="collapse" data-bs-target="#loansChild" aria-expanded="true" aria-controls="loansChild") Loans <svg aria-hidden="true" focusable="false" class="down-arrow w-5 h-6 inline-block ml-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>
+						div#loansChild.relative.accordion-collapse.collapse.grid.gap-8.grid-cols-2(data-bs-parent="#loansItem" aria-labelledby="loansParent")
+							ul
+								li: a(href="#") Cash loans
+								li: a(href="#") Fast loans
+								li: a(href="#") Online loans
+								li: a(href="#") Personal loans
+							ul
+								li: a(href="#") Small loans
+								li: a(href="#") $1000–$2000 Loans
+								li: a(href="#") $2000–$5000 Loans
+								li: a(href="#") Bad Credit Loans
+					li: a(href="#") Blog
+					li: a(href="#") Reviews
+					li: a(href="#") Contact
+					li: a(href="#") Legals
+
+				div.h-px.bg-linegrey.mt-8
+
+				div.flex.items-center.mt-8.pl-6
+
+					<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-4" viewBox="0 0 512 512"><path d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
+
+					p.pt-1.font-bold.text-lg Warning about borrowing

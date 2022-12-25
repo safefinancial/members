@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "spa_angular_typescript_hello-world": {
+    "members-ui": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/spa_angular_typescript_hello-world",
+            "outputPath": "dist/members-ui",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -58,16 +58,16 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "spa-angular-typescript-hello-world:build",
+            "browserTarget": "members-ui:build",
             "port": 4040,
             "host": "0.0.0.0"
           },
           "configurations": {
             "production": {
-              "browserTarget": "spa_angular_typescript_hello-world:build:production"
+              "browserTarget": "members-ui:build:production"
             },
             "development": {
-              "browserTarget": "spa_angular_typescript_hello-world:build:development"
+              "browserTarget": "members-ui:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "spa_angular_typescript_hello-world:build"
+            "browserTarget": "members-ui:build"
           }
         },
         "test": {
